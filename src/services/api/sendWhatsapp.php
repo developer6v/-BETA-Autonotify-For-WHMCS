@@ -91,6 +91,7 @@ function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
             "phone" => 35999309701
         ]);
     //}
+    file_put_contents("responsesendwhatsapp.txt", "Hook chamado com sucesso: " . $response);
     return $response;
 }
 
