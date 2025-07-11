@@ -2,6 +2,7 @@
 use WHMCS\Database\Capsule;
  
 function invoiceCreated($vars) {
+    file_put_contents("hookcalled.txt", "Hook chamado com sucesso: " . json_encode($vars));
     $invoiceId = $vars['invoiceid'];
     $clientId = Capsule::table('tblinvoices')->where("id", "=",  $invoiceId)->value("userid");
 
