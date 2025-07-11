@@ -15,7 +15,7 @@ function autonotify_module_whmcs_config() {
 
 function autonotify_module_whmcs_activate() {
     autonotify_config();
-    return array('status' => 'success', 'description' => 'Módulo ativado com sucesso! As seguintes tabelas foram criadas no banco de dados (se não existiam): sr_autonotify_for_whmcs, sr_templates_for_whmcs, sr_relatory_for_whmcs.');
+    return array('status' => 'success', 'description' => 'Módulo ativado com sucesso! As seguintes tabelas foram criadas no banco de dados (se não existiam): sr_autonotify_module_whmcs, sr_templates_for_whmcs, sr_relatory_for_whmcs.');
 }
 
 function autonotify_module_whmcs_deactivate() {

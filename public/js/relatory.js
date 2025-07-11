@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
         });
         var ids = ids.join(",");
         $.ajax({
-            url: "/modules/addons/autonotify_for_whmcs/src/services/module/deleteItems.php",
+            url: "/modules/addons/autonotify_module_whmcs/src/services/module/deleteItems.php",
             type: "POST",
             data: {
                 "tab": "relatory",

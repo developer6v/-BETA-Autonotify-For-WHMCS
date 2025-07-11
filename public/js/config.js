@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
         var systemStatus = $("#systemstatus").val();
         
         $.ajax({
-            url: "/modules/addons/autonotify_for_whmcs/src/services/module/saveConfig.php",
+            url: "/modules/addons/autonotify_module_whmcs/src/services/module/saveConfig.php",
             type: "POST",
             data: {
                 "instance_key": instance_key,
@@ -41,7 +41,7 @@ function saveTemplate(id) {
     var status = $("#templateStatus-" + id).val();
     var message = $("#templateMessage-" + id).val();
     jQuery.ajax({
-        url: "/modules/addons/autonotify_for_whmcs/src/services/module/saveTemplate.php",
+        url: "/modules/addons/autonotify_module_whmcs/src/services/module/saveTemplate.php",
         type: "POST",
         data: {
             "idTemplate": id,

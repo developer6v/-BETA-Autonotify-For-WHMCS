@@ -2,7 +2,7 @@
 jQuery(document).ready(function($){
     $("#searchGroups").click(function() {
         $.ajax({
-            url: "/modules/addons/autonotify_for_whmcs/src/controllers/api/searchGroups.php",
+            url: "/modules/addons/autonotify_module_whmcs/src/controllers/api/searchGroups.php",
             type: "POST",
             beforeSend: function() {
                 $(".ajaxImg").css("display","block");
@@ -36,7 +36,7 @@ jQuery(document).ready(function($){
 
 function desconnectApi() {
     jQuery.ajax({
-        url: "/modules/addons/autonotify_for_whmcs/src/controllers/api/desconnectApi.php",
+        url: "/modules/addons/autonotify_module_whmcs/src/controllers/api/desconnectApi.php",
         type: "POST"
     }).always(function(response) {
         var data;
