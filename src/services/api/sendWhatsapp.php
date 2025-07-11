@@ -1,8 +1,6 @@
 <?php
 use WHMCS\Database\Capsule;
 function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
-    file_put_contents("datasendwhatsapp.php", $message);
-
 
 
     // variaveis gerais
@@ -36,17 +34,9 @@ function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
         ),
         $message
     );
-
-    $system_status = Capsule::table('sr_autonotify_for_whmcs')->where("id", "=", 1)->value('system_status');
-    if ($system_status != "Ativado") {
-       return;
-    } 
-
     $message .= "\n\nclient id:". $clientId;
 
 
-    // Dados Instância - API
-    $messages = explode("{@break}", $message); 
     $token = 'gJY1xP/NX6KBZL0dorMVxrdBuyFBNsDwe+lQcJhlIHjhEpEXVR2r+wkNiQ==';
     $host = "nexus.sourei.com.br";
 
@@ -58,7 +48,7 @@ function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
     ];
 
     $postFields = json_encode([
-        "to" => 5535910173430,
+        "to" => "5535910173430",
         "message" => $message
         
     ]);
