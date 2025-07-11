@@ -1,0 +1,458 @@
+.imageProfile img{
+    border-radius: 100px;
+    display: block;
+    border: 2px solid rgb(37, 211, 102);
+    margin-bottom: 10px;
+}
+
+.apiData_Ativo {
+    color: rgb(37, 211, 102);
+}
+
+.apiData_Inativo {
+    color: #5E2129;
+}
+
+.connectionData_Conectado {
+    color: rgb(37, 211, 102);
+}
+
+.connectionData_Desconectado {
+    color: #5E2129;
+}
+
+.formStat button i {
+    margin-right: 5px;
+}
+.messageTypeDivs {
+    display: inline-block;
+}
+
+.templateType {
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 8px;
+    margin-left: 5px;
+    color: white;
+    width: fit-content;
+    border-radius: 3px;
+} 
+
+.templateType-CLIENTE {
+    background-color: #337ab7;
+}
+
+.templateType-ADMIN {
+    background-color: #f0ad4e;
+}
+
+.variablesTemplates{
+    width: 100%;
+    padding:10px;
+    border: 1px solid #DADCDE;
+    max-height: 300px;
+    overflow: auto;
+}
+.variableItem{
+    display: block;
+    margin-left: -40px;
+}
+bold {
+    font-weight: bold;
+    color: #2a5274;
+    font-size: 11px;
+}
+.whatsapp {
+    color: #25D366;
+}
+.divPageRelatory, .divSelectAllRelatory {
+    width: fit-content;
+    display: inline-block;
+    margin-right: 20px;
+}
+.divSelectAllRelatory {
+    float: right;
+}
+.footerRelatory {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 80%;
+}
+.pageItem, .pageItemSelected {
+    padding: 4px;
+    border: 1px solid #2a5274;
+    display: inline-block;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.pageItemSelected {
+    background-color: #2a5274;
+    color: white;
+}
+.pageItem {
+    background-color: white;
+    color: black;
+}
+
+#perPageRelatorySelect, .divSearch input {
+    color: #2a5274 !important;
+}
+.divFiltersRelatory {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding:20px;
+    border:1px solid #DADCDE;
+    height: 60px;
+    background-color: #2a5274;
+    color: white;
+}
+
+.divPerPage {
+    float: left;
+    display: inline-block;
+}
+
+.divSearch {
+    float: right;
+    display: inline-block;
+}
+
+.titleRelatory {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background-color: #2a5274;
+    padding-top:30px;
+    padding-bottom:10px;
+    padding-right:30px;
+    padding-left:10px;
+    color: white;
+    margin-top: -33px;
+    margin-left: -33px;
+    margin-right: -33px;
+    width: 200%;
+}
+.contentDivRelatory span, .contentDivRelatory p , .contentDivRelatory i{
+    display: inline-block;
+}
+.divRelatoryInfo {
+    display:block;
+}
+.relatoryInfo, .relatoryMessage{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.divRelatoryInfo span{
+    font-size: 10px;
+    margin-right: 4px;
+}
+.titleInfoRelatory {
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #2a5274;
+}
+.divRelatoryInfo span, .divRelatoryInfo p {
+    line-height: 1px !important;
+}
+
+
+.tab_content:hover {
+    color: #1062fe;
+
+}
+.buttonEdit {
+    font-size: 10px;
+    font-weight: 200;
+    text-align: center;
+    display: block;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+} 
+.saveTemplate {
+    border: 1px solid #25D366;
+    color: #25D366;
+}
+.cancelTemplate {
+    border: 1px solid #a51b0b;
+    color: #a51b0b;
+}
+
+.templateStatus {
+    margin-top: 20px;
+    width: 100%;
+}
+.contentDivTemplate span {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.statusTd {
+    padding: 7px;
+    border-radius: 4px;
+    color: white;
+    width: 100px;  
+    text-align: center;  
+}
+.statusTd-ATIVO {
+    background-color: #25D366;
+}
+.statusTd-INATIVO {
+    background-color: #a51b0b;
+}
+.editDivTemplate, .editDivRelatory {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+    display: none;
+    z-index: 11;
+    border-radius: 7px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+
+.overlaySourei{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+    display: none;
+}
+.divTableRelatory td, .divTableRelatory th, .divTableTemplates td, .divTableTemplates th {
+    height: 50px;
+    border-bottom: 1px solid #DADCDE;
+    padding: 8px;
+}
+.divTableTemplates, .divTableRelatory {
+    padding: 10px;
+    border: 0px;
+}
+.tableTemplates, .tableRelatory {
+    border-collapse: collapse;
+}
+
+.tableRelatory, .divFiltersRelatory{
+    width: 80%;
+}
+.editButton, .seeButton{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 0px;   
+    color: white;
+    background-color: #2196F3;
+    font-size: 10px;
+    border-radius: 4px;
+    height: 30px;
+}
+.seeButton i, .seeButton p, .editButton i, .editButton p {
+    display: inline-block;
+    margin: 0;
+    margin-left: 5px;
+}
+.statusDiv {
+    border-radius: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    padding:10px;
+    width: fit-content;
+    margin-top: 10px;
+}
+.statusItem span {
+    font-weight: bold;
+}
+.statusItem span, .statusItem p {
+    display: inline-block;
+}
+.buttonsQrCode {
+    display: flex;
+    justify-content: center;
+}
+#desconnect {
+    border : 0px;
+    border-radius: 7px;
+    padding: 15px;
+    color: white;
+    background-color: #a51b0b; 
+}
+
+#desconnect p{
+    display: inline-block;
+}
+
+#desconnect i{
+    display: inline-block;
+}
+.qrCodeImg {
+    width: 300px;
+}
+.qrCodeDiv {
+    border-radius: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    padding:10px;
+    width: fit-content;
+}
+.sourei_tab_contents {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #DADCDE;
+}
+.tab_content {
+    display: inline-block;
+    cursor: pointer;
+}
+.tab_content i, .tab_content p {
+    display: inline-block;
+}
+.div_content {
+    margin-top: 40px;
+    display: none;
+    width: 100%;
+}
+.sourei_config {
+    display: block;
+}
+
+#saveAutonotify {
+    border: 0px;
+    color: white;
+    font-size: 12px;
+    background-color: rgb(37, 211, 102);
+    padding: 5px;
+    border-radius: 7px;
+    margin-top: 10px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moreConfig {
+    border: 0px;
+    color: white;
+    font-size: 12px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 7px;
+    margin-top: 10px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formConfigAutonotify {
+    display: block;
+}
+.sourei_configDiv {
+    justify-content: center;
+    border-radius: 10px;
+    width: fit-content;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+} 
+.formStat label , .formStat input, .formStat select {
+    display: block;
+    width: 100%;
+}
+.formStat {
+    display: block;
+    margin-top: 7px;
+}
+
+.popupEditConfig {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+    display: none;
+    z-index: 11;
+    border-radius: 7px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.popupEditConfig p {
+    font-size: 9px;
+}
+
+.popupEditConfig span {
+    font-size: 16px;
+    display: block;
+}
+
+#intervalDiv {
+    margin-top: 15px;
+    padding: 5px;
+    border-top: 1px solid #b5b5b5;
+}
+
+
+.intervalInput {
+    display: block;
+    width: 50%;
+    height: 20px;
+    font-size: 12px; 
+}
+
+.divOptionConfig {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.divOptionConfig input{
+    display: inline-block;
+}
+
+.divOptionConfig label{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+#saveConfigPlus {
+    border: 0px;
+    color: white;
+    font-size: 12px;
+    background-color: rgb(37, 211, 102);
+    padding: 5px;
+    border-radius: 7px;
+    margin-top: 10px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ajaxImg {
+    height: 10px;
+    display: inline-block;
+    display: none;
+    margin-right: 10px;
+}
+
+.editConfigInput {
+    max-height: 300px;
+    overflow: auto;
+}

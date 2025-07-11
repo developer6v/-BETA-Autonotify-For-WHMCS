@@ -1,0 +1,201 @@
+[ 
+    {
+        "id": 1,
+        "messageType": "Fatura Criada",
+        "message": "Olá {@firstname}! Informamos que a fatura N° *{@invoiceid}*, com vencimento em {@duedate}, no valor total de R${@value}, foi enviada para seu email. Na sua área de cliente também você encontra o código de barras, pix copia e cola ou se preferir pode até imprimir o boleto: {@autologin}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@invoiceid} - ID da fatura, {@duedate} - Data de vencimento, {@value} - Valor do Pedido, {@email} - Email do Cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa"
+        
+    },
+    {
+        "id": 2,
+        "messageType": "Lembrete de Fatura",
+        "message": "Olá {@firstname}! Informamos que sua fatura *{@invoiceid}* está prestes vencer no dia {@duedate}, no valor total de *R$ {@value}*. No seu email e na sua área de cliente você encontra o código de barras, pix copia e cola ou se preferir pode até imprimir o boleto: {@autologin}",
+        "status": "INATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@invoiceid} - ID da fatura, {@duedate} - Data de vencimento, {@value} - Valor do Pedido, {@email} - Email do Cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@pixqrcode} - Qr Code do pix , {@msgboletoanexo} - Boleto em anexo , {@pixcopiacola} - Pix copia e cola, {@codigobarras} - Código de barras boleto, {@company} - Empresa"
+    },
+    {
+        "id": 3,
+        "messageType": "Fatura Paga",
+        "message": "Olá {@firstname}! Informamos que o pagamento de sua fatura N° {@invoiceid}, foi confirmado com sucesso, agradecemos a sua confiança.",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@invoiceid} - ID da fatura, {@duedate} - Data de vencimento, {@value} - Valor do pedido, {@email} - Email do Cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa"
+    },
+    {
+        "id": 4,
+        "messageType": "Ticket Criado",
+        "message": "Olá {@firstname}, Recebemos o seu ticket *{@titleTicket}* - de n° {@ticket} em {@date} as {@hour} em nosso sistema. Aguarde, em breve um de nossos atendentes irá lhe atender. ",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@titleTicket} - Assunto do ticket, {@ticket} - ID do ticket, {@date} - Data do Ticket, {@hour} - Horário do Ticket, {@autologin_ticket} - Autenticação automática para o ticket, {@company} - Empresa"
+    },
+    {
+        "id": 5,
+        "messageType": "Ticket Respondido",
+        "message": "Olá {@firstname}! O seu ticket *{@titleTicket}* - de N° {@ticket} foi respondido por nossa equipe neste exato momento *({@date} - {@hour})*. Visite sua área de cliente para conferir maiores informações ou clique no link abaixo.\n\n{@autologin_ticket}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@titleTicket} - Assunto do ticket, {@ticket} - ID do ticket, {@date} - Data do Ticket, {@hour} - Horário do Ticket, {@autologin_ticket} - Autenticação automática para o ticket, {@company} - Empresa"
+    },
+    {
+        "id": 6,
+        "messageType": "Serviço Criado",
+        "message": "Olá {@firstname}! O seu produto *{@product}* foi ativado! Para sua segurança os dados de acesso foram encaminhados ao seu e-mail neste momento. Caso não encontre entre em contato conosco.",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@product} - Nome do serviço/produto criado, {@linkpainel} - Autenticação automática (Painel), {@company} - Empresa"
+    },
+    {
+        "id": 7,
+        "messageType": "Serviço Suspenso",
+        "message": "Olá {@firstname}! Informamos que o produto {@product} foi suspenso, para mais informações acesse a área do cliente.",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@product} - Nome do serviço/produto suspenso, {@company} - Empresa"
+    },
+    {
+        "id": 8,
+        "messageType": "Serviço Reativado",
+        "message": "Olá {@firstname}! Informamos que o produto {@product} foi reativado, para mais informações acesse a área do cliente.",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@product} - Nome do serviço/produto reativado, {@company} - Empresa"
+    },
+    {
+        "id": 9,
+        "messageType": "Serviço Cancelado",
+        "message": "Olá {@firstname}! Informamos que o produto {@product} foi cancelado, para mais informações acesse a área do cliente.",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@product} - Nome do serviço/produto cancelado, {@company} - Empresa"
+    },
+    {
+        "id": 10,
+        "messageType": "Bem-vindo",
+        "message": "Olá {@firstname}!  Seja bem-vindo a {@company}! Obrigado por escolher nossos serviços.\n\nConheça sua conta: {@autologin}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa"
+    },
+    {
+        "id": 11,
+        "messageType": "Login de Cliente",
+        "message": "Olá {@firstname}! Identificamos um acesso à sua conta originado do endereço de IP {@ipaddr}. Caso desconheça este IP recomendamos alterar sua senha imediatamente",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa, {@idclient} - ID do cliente, {@ipaddr} - IP de acesso,  {@date} - Data do acesso, {@hour} - Hora do Acesso"
+    },
+    {
+        "id": 12,
+        "messageType": "Falha de Login",
+        "message": "Olá {@name}! Identificamos uma falha de login originada deste IP {@ipaddr} em {@date} as {@hour} sua conta: {@email}. Caso você desconheça este IP ou tenha certeza que não foi você recomendamos alterar sua senha imediatamente",
+        "status": "INATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa, {@idclient} - ID do cliente, {@ipaddr} - IP de acesso,  {@date} - Data do acesso, {@hour} - Hora do Acesso"
+    },
+    {
+        "id": 13,
+        "messageType": "Fatura Cancelada",
+        "message": "Olá {@firstname}! Informamos que a fatura N° {@invoiceid}, com vencimento em {@duedate} e o valor total de R$ {@value} foi cancelada em sua conta. Para mais detalhes entre em contato com o nosso suporte via ticket em sua área do cliente",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@invoiceid} - ID da fatura, {@duedate} - Data de vencimento, {@value} - Valor do pedido, {@email} - Email do Cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa"
+    },
+    {
+        "id": 14,
+        "messageType": "Troca de senha",
+        "message": "Olá {@name}! Informamos que a senha da sua conta ({@email}) foi alterada neste momento e por isso achamos prudente te notificar. IP: {@ipaddr}, Data da alteração: {@date}, Hora: {@hour}. Se você desconhece essa ação recomendamos recuperar sua senha neste momento e em seguida entre em contato com nosso suporte via ticket em sua área do cliente",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa, {@idclient} - ID do cliente, {@ipaddr} - IP de acesso,  {@date} - Data do acesso, {@hour} - Hora do Acesso"
+    },
+    {
+        "id": 15,
+        "messageType": "Fatura Reembolsada",
+        "message": "Olá {@firstname}! Informamos que o reembolso da fatura N° {@invoiceid} no valor total de R$ {@value} foi processado com sucesso",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@invoiceid} - ID da fatura, {@duedate} - Data de vencimento, {@value} - Valor do pedido, {@email} - Email do Cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa"
+    },
+    {
+        "id": 16,
+        "messageType": "Ticket Fechado",
+        "message": "Olá {@firstname}! O seu ticket *{@titleTicket}* - de N° {@ticket} foi concluido por nossa equipe neste exato momento *({@date} - {@hour})*. Caso tenha eventuais dúvidas fique a vontade para responde-lo, e com isso reabrir o chamado: {@autologin_ticket}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@titleTicket} - Assunto do ticket, {@ticket} - ID do ticket, {@date} - Data do Ticket, {@hour} - Horário do Ticket, {@autologin_ticket} - Autenticação automática para o ticket, {@company} - Empresa"
+    },
+    
+    {
+        "id": 17,
+        "messageType": "Ticket Respondido",
+        "message": "Ticket *N°{@ticket}* respondido em nosso sistema\n\n*Informações do Ticket:*\nCliente: {@firstname} {@lastname}\nAssunto: {@titleTicket}\nHorário: {@date} {@hour}\n\n*Mensagem:*\n{@ticketMessage}\n\n*Responda agora:* {@autologinticketAdmin}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@titleTicket} - Assunto do ticket, {@ticket} - ID do ticket, {@date} - Data do Ticket, {@hour} - Horário do Ticket, {@autologin_ticket} - Autenticação automática para o ticket, {@company} - Empresa"
+    },
+    
+    {
+        "id": 18,
+        "messageType": "Ticket Criado",
+        "message": "Novo ticket *N°{@ticket}* em nosso sistema\n\n*Informações do Ticket:*\nCliente: {@firstname} {@lastname}\nAssunto: {@titleTicket}\nHorário: {@date} {@hour}\n\n*Mensagem:*\n{@ticketMessage}\n\n*Responda agora:* {@autologinticketAdmin}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@ticketMessage} - Mensagem do ticket, {@autologin} - Autenticação automática, {@titleTicket} - Assunto do ticket, {@ticket} - ID do ticket, {@date} - Data do Ticket, {@hour} - Horário do Ticket, {@autologin_ticket} - Autenticação automática para o ticket, {@company} - Empresa"
+    },
+    {
+        "id": 19,
+        "messageType": "Nota Fiscal",
+        "message": "Olá {@firstname},\n\nA nota fiscal da fatura *#{@invoiceid}* no valor *R$ {@value}* está disponível no seu email ou pode ser baixada nessse link: {@linkNFS}\n\nEstamos lhe enviando a nota fiscal de número *{@idnfs}*, que foi autorizada em *{@autorizado}*.\n\nVer nota fiscal eletrônica {@linkNFS}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@clientid} - ID do cliente, {@linkNFS} - Link para visualizar a Nota Fiscal, {@idnfs} - ID da Nota Fiscal, {@autorizado} - Data/Hora autorização,{@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@invoiceid} - ID da fatura, {@value} - Valor do Pedido, {@email} - Email do Cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa"
+    },
+    {
+        "id": 20,
+        "messageType": "Novo Cliente",
+        "message": "Novo cliente cadastrado *#{@clientid}*\n\n*Informações do cliente:*\n*Nome: {@firstname} {@lastname}\nEmail: {@email}\nTelefone: {@phone}\n\n*Acesse o cliente:* {@urlClient}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@urlClient} - Url para o perfil do cliente,{@phone} - Telefone do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa"
+    },
+    
+    {
+        "id": 21,
+        "messageType": "Novo Pedido",
+        "message": "Novo pedido *#{@orderid}* no valor de *R$ {@value}*\n\n*Informações do Pedido:*\nData do pedido: {@date} {@hour}\nPagamento: {@paymentmethod}\nStatus: {@statusorder}{@cupomLine}{@affiliateLine}{@requestorLine}\n\n*Itens do pedido:*\n{@productslist}\n\n*Informações do Cliente:*\nNome: {@firstname} {@lastname}\nEmail: {@email}\nTelefone: {@phone}\nEndereço: {@address}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@orderid} - Id do pedido, {@value} - Valor do pedido, {@date} - Data de criação, {@hour} - Horário de criação, {@address} - Endereço do cliente, {@phone} - Telefone do cliente, {@requestorLine} - Linha do solicitante, {@affiliateLine} - Linha do afiliado, {@productslist} - Lista de produtos, {@cupomLine} - Linha do cupom, {@statusorder} - Status do pedido, {@paymentmethod} - Método de pagamento, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@product} - Nome do serviço/produto criado, {@linkpainel} - Autenticação automática (Painel), {@company} - Empresa"
+    },
+    
+    {
+        "id": 22,
+        "messageType": "Pedido Pago",
+        "message": "Você recebeu o valor de *R$ {@value}* do pedido *#{@orderid}*\n\n*Informações do Pedido:*\nData do pedido: {@date} {@hour}\nPagamento: {@paymentmethod}\nStatus: {@statusorder}\n{@cupomLine}\n{@affiliateLine}\n{@requestorLine}\n*Itens do pedido:*\n{@productslist}\n\n*Informações do Cliente:*\nNome: {@firstname} {@lastname}\nEmail: {@email}\nTelefone: {@phone}\nEndereço: {@address}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@orderid} - Id do pedido, {@value} - Valor do pedido, {@date} - Data de criação, {@hour} - Horário de criação, {@address} - Endereço do cliente, {@phone} - Telefone do cliente, {@requestorLine} - Linha do solicitante, {@affiliateLine} - Linha do afiliado, {@productslist} - Lista de produtos, {@cupomLine} - Linha do cupom, {@statusorder} - Status do pedido, {@paymentmethod} - Método de pagamento, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@product} - Nome do serviço/produto criado, {@linkpainel} - Autenticação automática (Painel), {@company} - Empresa"
+    },
+        
+    {
+        "id": 23,
+        "messageType": "Registro de domínio",
+        "message": "Novo registro de domínio *{@domainid}*\n\n*Informações do domínio:*\nDomínio:{@dominio}\nPeríodo: {@regperiod}\nCliente: {@firstname} {@lastname} (#{@clientid})\n\n*Informações do contato:*\nNome: {@contactname}\nTelefone: {@contactphone}\nEmail: {@contactemail}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@domainid} - ID do domínio, {@dominio} - Domínio, {@regperiod} - Período do registro, {@contactname} - Nome do contato, {@contactemail} - Email do contato, {@contactphone} - Telefone do contato, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa"
+    },
+
+    {
+        "id": 24,
+        "messageType": "Falha no registro de domínio",
+        "message": "Falha no registro do domínio *{@domainid}*\n\n*Informações do domínio:*\nDomínio:{@dominio}\nPeríodo: {@regperiod}\nCliente: {@firstname} {@lastname} (#{@clientid})\nErro: {@error}\n\n*Informações do contato:*\nNome: {@contactname}\nTelefone: {@contactphone}\nEmail: {@contactemail}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@domainid} - ID do domínio, {@dominio} - Domínio, {@regperiod} - Período do registro, {@contactname} - Nome do contato, {@contactemail} - Email do contato, {@error} - Erro na tentativa de registrar, {@contactphone} - Telefone do contato, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa"
+    }
+]
