@@ -44,13 +44,13 @@ function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
 
     // Dados Instância - API
     $messages = explode("{@break}", $message); 
-    $token = "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiV1BQIFNPVVJFSSJ9.ydKDUr3hpLYW_8v6nVQFMnU_oeU0D5P6i_Yc67tFVLQMPksg0IGdn7FsBDWiQDuNIbP_2PkPjfkMrqbIqoR07A";
-    $host = "wpp.sourei.com.br";
+    $token = 'gJY1xP/NX6KBZL0dorMVxrdBuyFBNsDwe+lQcJhlIHjhEpEXVR2r+wkNiQ==';
+    $host = "nexus.sourei.com.br";
 
     // DADOS REQUISIÇJÃO - API
-    $urlRequisição = "https://{$host}/rest/sendMessage/{$instance_key}/text";
+    $urlRequisição = "https://{$host}/api/v1/message/text";
     $headers = [
-        "Authorization: Bearer {$token}",
+        "x-user-secret:{$token}",
         "Content-Type: application/json"
     ];
     foreach ($messages as $message ) {

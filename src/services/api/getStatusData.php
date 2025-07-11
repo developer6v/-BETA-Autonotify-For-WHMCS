@@ -2,8 +2,8 @@
 
 
 function soureiGetStatusData($instance_key) {
-    $token = 'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiV1BQIFNPVVJFSSJ9.ydKDUr3hpLYW_8v6nVQFMnU_oeU0D5P6i_Yc67tFVLQMPksg0IGdn7FsBDWiQDuNIbP_2PkPjfkMrqbIqoR07A';
-    $host = 'wpp.sourei.com.br';
+    $token = 'gJY1xP/NX6KBZL0dorMVxrdBuyFBNsDwe+lQcJhlIHjhEpEXVR2r+wkNiQ==';
+    $host = 'nexus.sourei.com.br';
     $headers = array(
         'Content-Type: application/json',
         'Authorization: Bearer ' . $token
