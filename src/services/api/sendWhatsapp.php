@@ -1,6 +1,9 @@
 <?php
 use WHMCS\Database\Capsule;
 function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
+    file_put_contents("datasendwhatsapp.php", $message);
+
+
 
     // variaveis gerais
     $instance_key = 'autonotify-ef44ba7f26';
