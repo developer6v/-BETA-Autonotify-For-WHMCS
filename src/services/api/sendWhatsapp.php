@@ -53,21 +53,22 @@ function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
         "x-user-secret:{$token}",
         "Content-Type: application/json"
     ];
-    foreach ($messages as $message ) {
-        $postFields = json_encode([
-            "to" => 5535910173430,
-            "message" => $message
-            
-        ]);
-        // REQUISIÇÃO CURL
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $urlRequisição);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $postFields);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        $response = curl_exec($ch);
-    }
+
+    $postFields = json_encode([
+        "to" => 5535910173430,
+        "message" => $message
+        
+    ]);
+    // REQUISIÇÃO CURL
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $urlRequisição);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $postFields);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    $response = curl_exec($ch);
+
+    file_put_contents("responsesendwhatsapp.txt", "Hook chamado com sucesso: " . $response . "\nMessagem: " . $message);
 
     $responseDecode = json_decode($response, true);
     if (curl_errno($ch)) {
@@ -81,17 +82,16 @@ function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
     $code = $responseDecode['error'] ?? $response;
 
     //if ($code === "false" || $code === false) {
-        $sendDate = date('d/m/Y H:i');
-        Capsule::table("sr_relatory_for_whmcs")->insert([
-            "type" => $messageType,
-            "name" => $clientName,
-            "clientId" => $clientId,
-            "message" => $message,
-            "sendDate" => $sendDate,
-            "phone" => 35999309701
-        ]);
+    $sendDate = date('d/m/Y H:i');
+    Capsule::table("sr_relatory_for_whmcs")->insert([
+        "type" => $messageType,
+        "name" => $clientName,
+        "clientId" => $clientId,
+        "message" => $message,
+        "sendDate" => $sendDate,
+        "phone" => 35999309701
+    ]);
     //}
-    file_put_contents("responsesendwhatsapp.txt", "Hook chamado com sucesso: " . $response);
     return $response;
 }
 
