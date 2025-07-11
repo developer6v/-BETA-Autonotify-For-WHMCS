@@ -19,7 +19,7 @@ function setScripts () {
     $script .= '<script src="/modules/addons/autonotify_for_whmcs/public/js/relatory.js"></script>';
 
     // app.css
-    $script .= '<link rel="stylesheet" type="text/css" href="/modules/addons/autonotify_for_whmcs/public/css/app.css"/>';
+    $script .= '<link rel="stylesheet" type="text/css" href="/modules/addons/autonotify_module_whmcs/public/css/app.css"/>';
     return $script;  
 }
 
