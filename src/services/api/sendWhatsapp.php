@@ -55,10 +55,9 @@ function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
     ];
     foreach ($messages as $message ) {
         $postFields = json_encode([
-            "messageData" => [
-                "to" => 35999309701,
-                "text" => $message
-            ]
+            "to" => 5535910173430,
+            "message" => $message
+            
         ]);
         // REQUISIÇÃO CURL
         $ch = curl_init();
