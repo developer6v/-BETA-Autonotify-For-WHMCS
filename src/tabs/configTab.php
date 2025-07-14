@@ -29,13 +29,13 @@ function sourei_tabConfig() {
     echo "
         <div class='formConfigAutonotify'>
             <div class = 'formStat'>
-                <label for='instancekey'>Instance Key</label>
+                <label for='instancekey'>Token</label>
                 <input id='instancekey' type='text' value='{$instance_key}'></input>
             </div>
             <div class = 'formStat'>
                 <label for='systemstatus'> Status do Sistema</label>
                 <select id='systemstatus' name='statuSystem'>";
-                    if ($system_status == 'Ativado') {
+                    if ($system_status) {
                         echo '<option value="Ativado" selected>Ativado</option>
                         <option value="Desativado">Desativado</option>';
                     } else {
