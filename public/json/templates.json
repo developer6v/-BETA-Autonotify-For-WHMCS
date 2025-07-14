@@ -83,7 +83,7 @@
     {
         "id": 11,
         "messageType": "Login de Cliente",
-        "message": "Olá {@firstname}! Identificamos um acesso à sua conta originado do endereço de IP {@ipaddr}. Caso desconheça este IP recomendamos alterar sua senha imediatamente",
+        "message": "Olá {@firstname} 👋!\n\nVocê realizou login recentemente? Identificamos um acesso à sua conta originado do endereço de IP: \n- {@ipaddr}\n\nCaso desconheça este IP recomendamos alterar sua senha imediatamente.\n\nAtenciosamente,\n{@company}\n{@website}",
         "status": "ATIVO",
         "type": "CLIENTE",
         "variables": "{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@autologin} - Autenticação automática, {@company} - Empresa, {@idclient} - ID do cliente, {@ipaddr} - IP de acesso,  {@date} - Data do acesso, {@hour} - Hora do Acesso"
