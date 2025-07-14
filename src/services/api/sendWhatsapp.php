@@ -34,7 +34,6 @@ function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
         ),
         $message
     );
-    $message .= "\n\nclient id:". $clientId;
 
 
     $token = 'gJY1xP/NX6KBZL0dorMVxrdBuyFBNsDwe+lQcJhlIHjhEpEXVR2r+wkNiQ==';
