@@ -47,7 +47,7 @@ function sendWhatsappMessage ($message, $phone, $messageType, $clientId) {
     ];
 
     $postFields = json_encode([
-        "to" => "5535910173430",
+        "to" => $phone,
         "message" => $message
         
     ]);
