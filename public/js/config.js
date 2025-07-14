@@ -12,6 +12,7 @@ jQuery(document).ready(function($){
         var instance_key = $("#instancekey").val();
         var admin_phone = $("#adminphone").val();
         var systemStatus = $("#systemstatus").val();
+        alert(systemStatus);
         
         $.ajax({
             url: "/modules/addons/autonotify_module_whmcs/src/services/module/saveConfig.php",

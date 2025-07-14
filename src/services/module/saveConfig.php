@@ -6,11 +6,6 @@ $instance_key = isset($_POST['instance_key']) ? $_POST['instance_key'] : null;
 $admin_phone = isset($_POST['admin_phone']) ? $_POST['admin_phone'] : null;
 $systemstatus = isset($_POST['systemStatus']) ? $_POST['systemStatus'] : null;
 
-if ($systemstatus == "Ativado") {
-    $systemstatus = 1;
-} else {
-    $systemstatus = 0;
-}
 if ($instance_key && $systemstatus) {
     
     Capsule::table('sr_autonotify_for_whmcs')  
